@@ -2,27 +2,18 @@ import java.util.Scanner;
 
 public class fibno {
     public static void main(String[] args) {
-        import java.util.Scanner;
+        int firstTerm=0,secondTerm=1,temp,range,i;
+        Scanner in=new Scanner(System.in);
+        System.out.println("enter range");
+         range=in.nextInt();
 
-        public class strinpalindrome {
-            public static void main(String[] args) {
-                int n = 1;
-                while (n > 0) {
-                    String word, reverse = "";
-                    System.out.println("enter a sring value");
-                    Scanner in = new Scanner(System.in);
-                    word = in.nextLine();
-                    int len = word.length();
-                    for (int i = len - 1; i >= 0; i--) {
-                        reverse = reverse + word.charAt(i);
-                    }
-                    if (word.equals(reverse)) {
-                        System.out.println("palindrome");
-                    } else {
-                        System.out.println("not palindrome");
-                    }
-                }
-            }
+        for (i=2;i<range;i++){
+            System.out.print(firstTerm+" ");//printing 0 and 1
+            temp=firstTerm+secondTerm;
+            firstTerm=secondTerm;
+            secondTerm=temp;
+
         }
+
     }
 }
